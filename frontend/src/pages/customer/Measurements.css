@@ -1,0 +1,35 @@
+.measurement-form {
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.measurement-form input,
+.measurement-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin-bottom: 0.75rem;
+}
+
+.measurement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.measurement-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--color-surface);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.measurement-card pre {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}

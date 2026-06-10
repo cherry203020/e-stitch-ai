@@ -1,0 +1,9 @@
+# Optional: local AI image generation (no API key).
+# Install with: pip install -r requirements-ai.txt
+# Uses free pretrained Stable Diffusion; first run downloads the model (~4GB).
+# GPU (CUDA) recommended for speed; CPU works but is slower.
+-r requirements.txt
+torch>=2.0.0
+diffusers>=0.25.0
+transformers>=4.35.0
+accelerate>=0.25.0

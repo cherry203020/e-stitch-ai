@@ -1,0 +1,42 @@
+.tailor-profile-page .tailor-profile-form {
+  max-width: 520px;
+}
+
+.tailor-profile-form section {
+  margin-bottom: 1.5rem;
+}
+
+.tailor-profile-form h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tailor-profile-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tailor-profile-form input,
+.tailor-profile-form select,
+.tailor-profile-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin-top: 0.25rem;
+}
+
+.tailor-profile-form .required {
+  color: var(--color-error, #c00);
+}
+
+.tailor-profile-form .form-hint {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.tailor-profile-form .btn {
+  margin-top: 0.5rem;
+}

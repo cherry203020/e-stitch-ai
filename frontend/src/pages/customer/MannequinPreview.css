@@ -1,0 +1,116 @@
+.mannequin-preview-page {
+  max-width: 1100px;
+}
+
+.mannequin-preview-source {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mannequin-preview-source label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.mannequin-preview-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .mannequin-preview-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mannequin-preview-view {
+  background: var(--color-surface);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-height: 400px;
+}
+
+.mannequin-viewer-wrap {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+
+.mannequin-viewer-hint {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.mannequin-preview-picker h3 {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.mannequin-picker-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mannequin-picker-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+
+.mannequin-picker-card:hover:not(:disabled),
+.mannequin-picker-card.selected {
+  border-color: var(--color-primary);
+}
+
+.mannequin-picker-card:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.mannequin-picker-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.mannequin-picker-card span {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mannequin-picker-placeholder {
+  width: 56px;
+  height: 56px;
+  background: var(--color-border);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}

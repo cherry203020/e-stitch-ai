@@ -1,0 +1,22 @@
+# Environment and secrets – do not commit
+.env
+.env.local
+*.env
+
+# Python
+__pycache__
+*.py[cod]
+.venv
+venv
+env
+
+# Database (optional – remove if you want to track DB)
+# estitch.db
+
+# Uploads (user-generated content)
+uploads/
+
+# IDE
+.idea
+.vscode
+*.swp

@@ -1,0 +1,186 @@
+.order-form {
+  max-width: 600px;
+}
+
+.order-form section {
+  margin-bottom: 1.5rem;
+}
+
+.order-form h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.order-form select,
+.order-form input,
+.order-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin-bottom: 0.5rem;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.measurement-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-summary {
+  background: var(--color-surface);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.order-form-catalog-design {
+  background: var(--color-surface);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.order-form-design-locked {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: var(--color-text-muted);
+}
+
+.order-form-hint {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.order-form-upload-design {
+  margin-top: 0.75rem;
+}
+
+.order-form-upload-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.order-form-upload-label input[type="file"] {
+  width: auto;
+  padding: 0.25rem;
+}
+
+.order-form-custom-preview {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background: var(--color-surface);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.order-form-custom-preview img {
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+.order-form-custom-note {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.order-form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.order-form-checkbox input[type="checkbox"] {
+  width: auto;
+}
+
+.order-form-matched {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-surface);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.order-form-design-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.order-form-design-tabs button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+}
+
+.order-form-design-tabs button.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.order-form-ai-designs {
+  margin-top: 0.5rem;
+}
+
+.order-form-ai-designs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.order-form-ai-design-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  cursor: pointer;
+  text-align: center;
+}
+
+.order-form-ai-design-card.selected {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb, 59, 130, 246), 0.1);
+}
+
+.order-form-ai-design-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+}
+
+.order-form-ai-design-card span {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
